@@ -41,7 +41,7 @@ public class FirstClass {
 
         User[] users = new User[]{ala,kuba,ula,karol};
 
-        int sum = 0;
+        float sum = 0;
         for (int i=0; i<users.length; i++) {
             sum += users[i].getAge();
         }
