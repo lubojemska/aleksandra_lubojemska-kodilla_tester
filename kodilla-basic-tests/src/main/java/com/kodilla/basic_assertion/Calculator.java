@@ -9,6 +9,9 @@ public class Calculator {
     }
 
     public int square(int c) {
+
         return (int) Math.pow(c,2);
+
+
     }
 }

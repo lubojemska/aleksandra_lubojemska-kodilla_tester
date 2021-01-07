@@ -26,8 +26,9 @@ public class CalculatorTestSuite {
 
     @Test
     public void testSquare() {
-        int c = 7;
-        int squareResult = calculator.square(c);
-        assertEquals(49,squareResult);
+
+        assertEquals(49,calculator.square(7));
+        assertEquals(49,calculator.square(-7));
+        assertEquals(0,calculator.square(0));
     }
 }
