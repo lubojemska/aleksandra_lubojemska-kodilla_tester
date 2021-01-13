@@ -1,16 +1,13 @@
 package com.kodilla.collections.arrays;
 
-import com.kodilla.collections.interfaces.Circle;
-import com.kodilla.collections.interfaces.Shape;
-import com.kodilla.collections.interfaces.Square;
-import com.kodilla.collections.interfaces.Triangle;
+import com.kodilla.collections.interfaces.*;
 
 public class ShapeUtils {
     public static void displayShapeInfo(Shape shape) {
         System.out.println("-----------------------------");
         System.out.println("Shape kind: " + getShapeName(shape));
-        System.out.println("Shape area: + shape.getArea());
-                System.out.println("Shape perimeter: " + shape.getPerimeter());
+        System.out.println("Shape area: "+ shape.getArea());
+        System.out.println("Shape perimeter: " + shape.getPerimeter());
     }
 
     private static String getShapeName(Shape shape) {

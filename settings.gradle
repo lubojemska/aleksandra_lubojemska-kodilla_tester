@@ -4,4 +4,5 @@ include 'HelloWorld'
 include 'kodilla-basic-tests'
 include 'ex'
 include 'kodilla-collections'
+include 'kodilla-collections-advanced'
 
