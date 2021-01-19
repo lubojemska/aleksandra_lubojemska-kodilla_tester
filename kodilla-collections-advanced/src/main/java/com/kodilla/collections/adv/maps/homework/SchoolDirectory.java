@@ -10,8 +10,8 @@ public class SchoolDirectory {
         Principal martha = new Principal("Martha", "Stewart");
 
 
-        School primarySchool = new School(96, 84, 30, 21, 18, 13);
-        School secondarySchool = new School(15, 20, 26, 42);
+        School primarySchool = new School("Primary school", 84, 30, 21, 18, 13);
+        School secondarySchool = new School("Secondary school", 20, 26, 42);
 
 
         schools.put(richard, primarySchool);
@@ -21,7 +21,7 @@ public class SchoolDirectory {
 
 
         for (Map.Entry<Principal, School> principalEntry : schools.entrySet()) {
-            System.out.println("Principal: " + principalEntry.getKey().getFirstName() + " " + principalEntry.getKey().getLastName() + ", school: " + School.class.getName() + ", number of students: " +
+            System.out.println("Principal: " + principalEntry.getKey().getFirstName() + " " + principalEntry.getKey().getLastName() + ", school: " + principalEntry.getValue().getName() + ", number of students: " +
                     principalEntry.getValue().getSum());
         }
     }

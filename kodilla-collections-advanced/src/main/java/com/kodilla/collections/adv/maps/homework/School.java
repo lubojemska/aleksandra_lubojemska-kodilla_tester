@@ -4,11 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class School {
-
-
+    private String name;
     private List<Integer> classVolume = new ArrayList<>();
 
-    public School(int... classVolume) {
+    public School(String name) {
+        this.name = name;
+        for (int school : classVolume)
+            this.classVolume.add(school);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public School(String name, int... classVolume) {
         for (int school : classVolume)
             this.classVolume.add(school);
     }
