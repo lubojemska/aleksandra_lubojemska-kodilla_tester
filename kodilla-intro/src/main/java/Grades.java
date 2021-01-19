@@ -30,7 +30,7 @@
         if(this.size == 0 ) {
             return 0;
         }
-        double sum = 0;
+        double sum = 0.0;
         for (int i=0; i<this.size; i++) {
             System.out.println("i=" +i + " grades["+i+"]="+grades[i]);
 

@@ -27,48 +27,48 @@ public class FirstClass {
         System.out.println(grades.add(3));
         System.out.println(grades.add(5));
 
-        System.out.println("recent grades= " +grades.recentGrades());
-        System.out.println("average grades= " +grades.averageGrades());
-        System.out.println("max grade: " +grades.maxGrade());
-        System.out.println("min grade: " +grades.minGrade());
+        System.out.println("recent grades= " + grades.recentGrades());
+        System.out.println("average grades= " + grades.averageGrades());
+        System.out.println("max grade: " + grades.maxGrade());
+        System.out.println("min grade: " + grades.minGrade());
 
 // ------------------------  RandomNumbers ---------------///
 
-        User ala = new User(10,"Ala");
-        User kuba = new User(42,"Kuba");
-        User ula = new User(30,"Ula");
-        User karol = new User(15,"Karol");
+        User ala = new User(10, "Ala");
+        User kuba = new User(42, "Kuba");
+        User ula = new User(30, "Ula");
+        User karol = new User(15, "Karol");
 
-        User[] users = new User[]{ala,kuba,ula,karol};
+        User[] users = new User[]{ala, kuba, ula, karol};
 
-        float sum = 0;
-        for (int i=0; i<users.length; i++) {
+        double sum = 0;
+        for (int i = 0; i < users.length; i++) {
             sum += users[i].getAge();
         }
-        float userAverageAge = sum / users.length;
+        double userAverageAge = sum / users.length;
 
         System.out.println("average age: " + userAverageAge);
 
-        for (int i=0; i<users.length; i++) {
+        for (int i = 0; i < users.length; i++) {
             if (userAverageAge > users[i].getAge()) {
                 System.out.println(users[i].getName());
             }
         }
 
 
-
         RandomNumbers r = new RandomNumbers();
         r.sum();
 
-//------------------ Zmiana kodu na obiektowy ----------------///
 
-    Person person = new Person("Adam",40.5, 178);
-    person.checkPerson();
+////------------------ Zmiana kodu na obiektowy ----------------///
+
+        Person person = new Person("Adam", 40.5, 178);
+        person.checkPerson();
 
 //------------------- Book ---------------------///
 
         Book book = Book.of("Isaac Asimov", "The Galaxy");
-        System.out.println(book.getAuthor() +", " + book.getTitle() );
+        System.out.println(book.getAuthor() + ", " + book.getTitle());
 
 //        -----------------KOLORY-----------------///
 
@@ -82,7 +82,7 @@ public class FirstClass {
                 break;
             }
             switch (String.valueOf(input.charAt(0))) {
-                case "B","b":
+                case "B", "b":
                     System.out.println("Blue");
                     break;
                 case "R", "r":
@@ -95,3 +95,4 @@ public class FirstClass {
         System.out.println("Bye");
     }
 }
+
