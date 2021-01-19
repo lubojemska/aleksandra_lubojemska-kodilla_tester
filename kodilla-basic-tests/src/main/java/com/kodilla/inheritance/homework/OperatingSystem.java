@@ -3,6 +3,8 @@ package com.kodilla.inheritance.homework;
 public class OperatingSystem {
     private int releaseDate;
 
+
+
     public int getReleaseDate() {
         return releaseDate;
     }

@@ -26,11 +26,11 @@
         return this.grades[this.size-1];
     }
 
-    public int averageGrades() {
+    public double averageGrades() {
         if(this.size == 0 ) {
             return 0;
         }
-        int sum = 0;
+        double sum = 0;
         for (int i=0; i<this.size; i++) {
             System.out.println("i=" +i + " grades["+i+"]="+grades[i]);
 
