@@ -13,13 +13,10 @@ public class BookApplication {
 
         System.out.println("----------------------");
 
-        book1.hashCode();
-        book2.hashCode();
-        book3.hashCode();
-        book4.hashCode();
-        System.out.println(book1 == book2);
-        System.out.println(book2 == book3);
-        System.out.println(book3 == book1);
-        System.out.println(book4 == book3);
+        System.out.println(book1.equals(book2));
+        System.out.println(book2.equals(book3));
+        System.out.println(book3.equals(book1));
+        System.out.println(book4.equals(book3))
+        ;
     }
 }
