@@ -1,8 +1,6 @@
 package com.kodilla.stream.homework;
 
-import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 
 public class Task {
@@ -11,19 +9,17 @@ public class Task {
     LocalDate opened;
     LocalDate deadline;
 
-
     public Task(String name, LocalDate opened, LocalDate deadline) {
         this.name = name;
         this.opened = opened;
         this.deadline = deadline;
-
     }
 
     public String getName() {
         return name;
     }
 
-    public LocalDate getOpened(){
+    public LocalDate getOpened() {
         return opened;
     }
 
@@ -36,11 +32,11 @@ public class Task {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Task task = (Task) o;
-        return Objects.equals(name, task.name) && Objects.equals(myDate, task.myDate) && Objects.equals(opened, task.opened) && Objects.equals(deadline, task.deadline);
+        return Objects.equals(name, task.name) && Objects.equals(opened, task.opened) && Objects.equals(deadline, task.deadline);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, myDate, opened, deadline);
+        return Objects.hash(name, opened, deadline);
     }
 }
